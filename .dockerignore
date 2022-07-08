@@ -1,0 +1,7 @@
+# If we have this password file isnide of /src/html/password.txt.
+# When we run the docker build, the docker build is actually going to everything from the source /html
+# And put it inside of our image. So that mean the password file living inside of the image.
+# And anyone who spins this container up, gonna see that file "password.txt"
+
+# "**"mean: Ignore password.txt anywhere in the path.
+**/password.txt
